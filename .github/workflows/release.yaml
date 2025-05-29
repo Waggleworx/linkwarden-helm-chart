@@ -29,18 +29,6 @@ jobs:
           charts_dir: .
           mark_as_latest: "true"
 
-      - name: Checkout gh-pages
-        run: |
-          git fetch origin gh-pages:gh-pages
-          git checkout gh-pages
-
-      - name: Add landing README
-        run: |
-          cp README.md index.md
-          git add index.md
-          git commit -m "Add index.md to gh-pages"
-          git push origin gh-pages
-
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           # CR_PACKAGE_PATH: "linkwarden"
