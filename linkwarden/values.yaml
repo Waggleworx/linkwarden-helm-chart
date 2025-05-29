@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: ghcr.io/linkwarden/linkwarden
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
   tag: "latest"
 
 postgres:
