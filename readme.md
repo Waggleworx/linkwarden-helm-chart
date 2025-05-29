@@ -23,11 +23,11 @@ To safely encrypt tokens and email hashes, you need a NextAuth secret.
 To create one, you can use openssl rand -base64 33.
 
 
-    ```sh
-    helm install my-linkwarden linkwarden/linkwarden --set configuration.authentication.authSecret=your_secret_here
-    ```
+```sh
+helm install my-linkwarden linkwarden/linkwarden --set configuration.authentication.authSecret=your_secret_here
+```
 
-    Replace `my-linkwarden` with the name you want to give to your Helm release.
+Replace `my-linkwarden` with the name you want to give to your Helm release.
 
 ## Configuration
 
