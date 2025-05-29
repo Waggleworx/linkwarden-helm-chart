@@ -9,6 +9,9 @@ image:
   pullPolicy: IfNotPresent
   tag: "latest"
 
+strategy:
+  type: Recreate
+
 postgres:
   enabled: true
   host: "postgres"

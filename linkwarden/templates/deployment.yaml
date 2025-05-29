@@ -9,6 +9,8 @@ spec:
   selector:
     matchLabels:
       {{- include "linkwarden.selectorLabels" . | nindent 6 }}
+    strategy:
+      type: {{ .Values.strategy.type}}
   template:
     metadata:
       {{- with .Values.podAnnotations }}
