@@ -12,7 +12,7 @@ This Helm chart deploys the Linkwarden application on a Kubernetes cluster.
 1. **Add the Helm repository:**
 
     ```sh
-    helm repo add linkwarden https://soubenz.github.io/linkwarden-helm-chart/
+    helm repo add linkwarden https://waggleworx.github.io/linkwarden-helm-chart/
     helm repo update
     ```
 
@@ -37,7 +37,7 @@ The following table lists the configurable parameters of the Linkwarden chart an
 |-------------------------------------------|-----------------------------------------------------------------------------|----------------------------------------------|
 | `replicaCount`                            | Number of replicas                                                          | `1`                                           |
 | `image.repository`                        | Image repository                                                            | `ghcr.io/linkwarden/linkwarden`              |
-| `image.pullPolicy`                        | Image pull policy                                                           | `IfNotPresent`                               |
+| `image.pullPolicy`                        | Image pull policy                                                           | `Always`                                     |
 | `image.tag`                               | Image tag                                                                   | `latest`                                     |
 | `postgres.enabled`                        | Enable PostgreSQL                                                           | `true`                                       |
 | `postgres.host`                           | PostgreSQL host                                                             | `postgres`                                   |
